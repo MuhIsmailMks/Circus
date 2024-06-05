@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/trump_hero.png"/> 
+    <!-- tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Margarine&display=swap" rel="stylesheet">
+    <!-- AOS scroll effect cdn --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- css link --> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- title -->
+    <title>TRUMP</title>
+</head>
+<body>
+
+    <!-- music --> 
+     <audio  id="background-music" autoplay loop  >
+        <source src="./assets/music.mp3" type="audio/mpeg"> 
+    </audio>
+
+
+       <!-- pop up -->
+       <section class="pop-up  z-[9999]  fixed w-full left-0 top-0 h-full  flex justify-center items-center overflow-y-auto">
+
+        <div class="pop_up-container relative pt-[5rem] md:pt-0 xl:w-[1307px] w-[90%] max-w-[90%] h-[500px] xl:h-[684px] max-h-[90vh] flex justify-center items-center flex-col">
+
+            <div class="logo absolute  w-full h-[180px] xl:h-[300px] top-[-20%] xl:top-[-10%] min-[1500px]:top-[-20%] z-[4] left-0 flex justify-center items-center">
+                <img src="./assets/images/trump_hero.png" alt="" class="h-full object-contain ">
+            </div>
+
+            <!-- background -->
+            <div class="w-full h-full overflow-hidden absolute left-0 top-0  ">
+                <div class="image_bg absolute z-[1] left-0 top-0 overflow-hidden w-full h-full flex justify-center items-center  xl:rounded-[100px]">
+                    
+                    <div class=" absolute z-[1] w-[200%] h-[200%] flex justify-center items-center">
+                        <img src="./assets/images/rotate_popup.jpg" alt="f" class="rotate-image absolute rounded-full w-[290%] h-[290%] object-cover opacity-[.5]">
+                    </div>
+                </div>
+                
+                <div class="w-full h-full z-[2] absolute left-0 top-0 "></div>
+                <div class="w-full h-full z-[2] absolute left-0 top-0 border-[#D44343]  bg-[#D443434D] border-[20px] xl:border-[31px]"></div>
+            </div>
+
+            <!-- content -->
+            <div class="content relative z-[10] flex items-center flex-col">
+                <p class="shadow_text_popup text-white text-[50px] xl:text-[100px]">welcome to</p>
+                <h2 class="shadow_title_popup text-center leading-[1] text-[80px] xl:text-[150px]">
+                    <span class="text-[#000000]">e</span><span class="text-[#FFB400]">l</span><span class="text-[#9068D4]">e</span><span class="text-[#4BB1DF]">c</span><span class="text-[#9ED450]">t</span><span class="text-[#812230]">i</span><span class="text-[#e6e4e4]">o</span><span class="text-[#e6e4e4]">n</span>
+
+                    <span class="text-[#812230]">C</span><span class="text-[#9ED450]">i</span><span class="text-[#4BB1DF]">r</span><span class="text-[#9068D4]">c</span><span class="text-[#FFB400]">u</span><span class="text-[#070707]">s</span> 
+                </h2>
+                <p class="shadow_text_popup text-center text-[30px] text-white xl:text-[100px]"> Enjoy the shit show Clowns</p>
+
+            </div>
+
+            <div class="pop-btns absolute z-10 bottom-[0%] w-full flex items-center justify-center flex-col md:flex-row gap-[2rem]">
+
+                <button class="enter hover:scale-[1.1] duration-300 w-[200px] h-[40px] xl:w-[338.5px] relative xl:h-[68px] flex justify-center items-center"> 
+                    <img src="./assets/images/enter_btn.svg" alt="" class="w-full absolute left-0 top-0 h-full">
+                    <span class="text-white relative tracking-[4px] uppercase xl:text-[2.5rem]">Enter</span>
+                </button> 
+            </div>
+        </div>
+
+        <div class="absolute w-full h-full left-0 top-0 blur_bg bg-[#000000d5]"></div>
+       
+    </section>
+ 
+    <div id="particles-js" class="absolute left-0 top-0 max-w-[100vw] h-full w-full bg-cover bg-[#00000009]"></div>
+
+      
+    <!-- container -->
+        <div class="container_site w-[100%] max-w-[100%] relative h-auto overflow-hidden">
+     
+
+        <!-- navbar --> 
+        <nav class="absolute top-0 left-0 z-[999] max-w-[100%] w-full px-[2rem] h-[80px] lg:px-[3rem] 2xl:px-[7.5rem] md:h-[120px] flex items-center justify-between">
+
+            <div class="menu-btn overflow-hidden relative lg:absolute lg:hidden flex flex-col items-center h-[20px] justify-center gap-1 w-[21px] sm:w-[35px] sm:h-[30px]">
+                <span class="bg-white top-0 absolute duration-200 ease-in-out h-[4px] sm:h-[5px] w-full rounded-md"></span>
+                <span class="bg-white top-[41%] absolute duration-200 ease-in-out h-[4px] sm:h-[5px] w-full rounded-md"></span>
+                <span class="bg-white bottom-0 absolute duration-200 ease-in-out h-[4px] sm:h-[5px] w-full rounded-md"></span>
+            </div>
+
+            <div class="accessibilty overflow-hidden duration-300 bg-[#D44343DB] lg:bg-transparent left-0 max-w-full absolute top-full lg:relative lg:top-0 w-full flex items-center justify-between flex-col lg:flex-row gap-8">
+
+                <ul class="flex items-center flex-col lg:flex-row gap-[2rem] md:gap-9 lg:gap-[1.5rem] w-full lg:w-auto">
+                    <li class="list-none">
+                        <a href="#about" class="text-white hover:text-black duration-300 ease-in-out tracking-[1px] text-[1.25rem] md:text-[1.4rem] xl:text-[35px]">about</a>
+                    </li>
+                    <li class="list-none">
+                        <a href="#how-to" class="text-white hover:text-black duration-300 ease-in-out tracking-[1px] text-[1.25rem] md:text-[1.4rem] xl:text-[35px]">how to</a>
+                    </li>
+                    <li class="list-none">
+                        <a href="#trumpnomics" class="text-white hover:text-black duration-300 ease-in-out tracking-[1px] text-[1.25rem] md:text-[1.4rem] xl:text-[35px]">trumpnomics</a>
+                    </li>
+                    <li class="list-none">
+                        <a href="#contact" class="text-white hover:text-black duration-300 ease-in-out tracking-[1px] text-[1.25rem] md:text-[1.4rem] xl:text-[35px]">contact</a>
+                    </li>
+                </ul>
+
+                <div class="social flex flex-col lg:flex-row items-center gap-6">
+                   <div class="social_media_container flex gap-4 md:gap-8 lg:gap-4">
+                    <div class="sosmed h-[48px] w-[48px] 2xl:h-[55px] 2xl:w-[55px] rounded-full flex justify-center border-black border-[2px] hover:border-4 duration-300 ease-in-out items-center bg-[#802130] cursor-pointer">
+                        <a href="https://t.me/Election_Circus
+                        " target="_blank"><img src="./assets/images/Telegram.png"  alt="telegra18" class="w-[18px] h-auto 2xl:w-[25px] "></a>
+                    </div>
+                    <div class="sosmed h-[48px] w-[48px] 2xl:h-[55px] 2xl:w-[55px] rounded-full flex justify-center border-black border-[2px] hover:border-4 duration-300 ease-in-out items-center bg-[#7A8A64] cursor-pointer">
+                        <a href="https://x.com/ElectionCirc" target="_blank"><img src="./assets/images/twitter.png" alt="twitter" class="w-[18px] h-auto 2xl:w-[25px] "></a>
+                    </div> 
+                   </div>
+                    <button class="trump-btn relative opacity-100 md:opacity-0 text-[1rem] flex justify-center items-center w-[142px] h-[53px] lg:w-[222px] lg:h-[63px] rounded-[75px] md:hidden">
+                        <span class="rounded-[75px] w-[90%] h-[80%] flex justify-center items-center  hover:bg-[#c41b1b] text-white tracking-[2px] font-[400] text-[1rem]">GET$TRUMP</span>
+                    </button>
+                </div>
+        
+            </div>
+
+            <div class="logo   absolute left-[50%] translate-x-[-50%] flex flex-col items-center justify-center h-full "> 
+                <img src="./assets/images/navbar_logo.png" alt="" class="h-auto object-contain w-[65px] md:w-[80px] xl:w-[110px]">
+            </div>
+
+            <button class="trump-btn relative opacity-0 md:opacity-100 w-0 flex justify-center items-center md:w-[192px] h-[53px] rounded-[75px] lg:ml-6 lg:w-[232px] lg:h-[63px]">
+                <span class="rounded-[75px]  duration-300 ease-in-out  hover:bg-[#c41b1b] w-[90%] h-[80%] flex justify-center items-center text-white font-normal text-[24px] tracking-[3px]">GET$TRUMP</span>
+            </button>
+
+
+        </nav> 
+
+        <!-- hero section -->
+        <section class="hero relative w-full mt-[80px] md:mt-[140px] xl:mt-[120px] h-[568px] md:h-[538px] xl:h-[800px] min-[1600px]:h-[900px] flex  items-center justify-center">
+
+            <div class="images max-w-[1600px] left-[50%] translate-x-[-50%] h-full w-full absolute top-0 flex justify-center ">
+                <img src="./assets/images/white_house.png" alt="building bg" class="h-[500px] w-auto xl:w-[80%] xl:h-auto object-cover xl:object-contain absolute bottom-0 z-[1]">
+                
+                <div class="top_image z-[0] w-full md:w-[60%] xl:w-[80%] h-auto absolute top-[30%] flex justify-between">
+                    <img src="./assets/images/hero_left_image.png" alt="" class="h-auto object-contain w-[100px] xl:w-[177px] cats-tb-animation">
+                    <img src="./assets/images/biden_hero.png" alt="" class="h-auto object-contain w-[120px] xl:w-[211px] cats-tb-animation">
+                </div>
+
+                <img src="./assets/images/trump_hero.png" alt="trump" class="bottom-0 z-[10] absolute w-[240px] xl:w-[456px]" data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="200">
+            </div>
+
+            <!-- title -->
+            <div class="title relative w-full h-full">
+                <h1 class="text-center leading-[1] text-[70px] md:text-[120px] xl:text-[158.89px]">
+                    <span data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="100">E</span><span class="text-[#FFB400]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="200">l</span><span class="text-[#9068D4]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="300">e</span><span class="text-[#4BB1DF]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="400">c</span><span class="text-[#9ED450]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="500">t</span><span class="text-[#812230]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="600">i</span><span class="text-white" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="700">on</span> 
+
+                <span class="text-[#812230]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="800">C</span><span class="text-[#9ED450]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="900">i</span><span class="text-[#4BB1DF]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="1000">r</span><span class="text-[#9068D4]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="1100">c</span><span class="text-[#FFB400]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="1200">u</span><span data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="1300">s</span>
+                </h1>
+            </div>
+
+            <!-- address -->
+            <button class="coming   overflow-hidden cursor-pointer flex justify-center items-center gap-[.5rem] absolute bottom-[-50px] w-[250px] xl:w-[501.94px] h-[106.69px]" data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200">
+                <img src="./assets/images/bg-address.svg" alt="" class="w-full absolute left-0 top-0 h-full">
+                <span class="coming-value relative text-black text-[18px] xl:text-[35px] rotate-[2deg] tracking-[2px] xl:tracking-[8px]" data-set="0x000...COMINGSOON">0x000...COMINGSOON</span> 
+                <img src="./assets/images/copy_address.svg" alt="copy icon" class="relative h-auto object-contain w-[20px] xl:w-[35.77px] rotate-[2deg] mt-[10px] xl:mt-[20px]">
+            </button>
+           
+        </section>
+
+        <!-- about section -->
+        <section id="about" class="about relative overflow-hidden w-full py-16 md:py-24 max-w-full flex flex-col items-center">
+            
+            <!-- about -->
+            <p class="about_text mx-auto text-center  text-transparent w-[90%] xl:w-[902px] text-[20px] xl:text-[45px]" data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200">"Make Electopia Great Again,"As the roared with a flair,
+                As the crowd cheered and laughed, unaware of his flair.</p>
+ 
+            <!-- about img -->
+            <img src="./assets/images/about_image.png" alt="" class="shake_image w-full max-[400px]:top-[170px] top-[140px] xl:top-[180px] absolute max-w-[1500px] ">
+
+            <div class="content  rounded-[1.5rem] mt-[37vw] xl:mt-[390px] mx-auto relative h-[478px] w-[349px] md:w-[723px] xl:w-[1206px] md:h-[606px] lg:h-[890px] flex justify-center items-center">
+
+        
+                <div class="bg absolute overflow-hidden left-0 top-0 w-[100%] rounded-[20px] h-full z-0 flex justify-center items-center bg-[#FFB400]">
+                    <div class=" absolute w-[200%] h-[200%] flex justify-center items-center">
+                        <img src="./assets/images/beam-r.png" alt="f" class="rotate-image absolute rounded-full w-[200%] h-[200%] object-cover">
+                    </div>
+                </div>
+
+                <div class="article_container rounded-[1.5rem] overflow-hidden relative max-w-[90%] h-[90%] xl:w-[1098px] lg:h-[792px] flex justify-between ">
+                    
+                    <div class="image absolute left-0  bottom-0 md:left-0 xl:left-[-6%]">
+                        <img src="./assets/images/lady.png" alt="cats" class=" w-[170px] md:w-[300px] xl:w-[600px] object-contain" data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="200">
+                    </div>
+
+                    <article class="text-white relative text-[1.25rem] md:text-[1.8rem] xl:text-[2.75rem] flex flex-col items-end gap-2 sm:gap-6">
+
+                        <p class="text-1 text-black tracking-[0px] lg:tracking-[-1px] leading-[1] md:pt-4 lg:leading-[1.2] mt-6 px-5 lg:px-0 md:pl-[3rem] md:pr-[7.1rem] lg:pl-[4rem] lg:pr-[13rem] text-[23px] md:text-[35px] xl:text-[56px]">
+                            In a circus of clowns and madcap mirth,
+                            Where the ringmaster juggles and the acrobats twirl,
+                            A hero emerged, with hair of gold and a grin,
+                            A clown named Trump, the star of the show, and his win.
+                        </p>
+
+                        <p class="text-2 w-[85%] relative md:w-[79%] lg:w-[70%] tracking-[0px] lg:tracking-[-1px] leading-[1] lg:leading-[1.2] pl-3 text-[23px] md:text-[35px]  xl:text-[45px]">
+                            The other clowns paled in comparison,
+                            As Trump's antics stole the show, a true sensation,
+                            Joe Biden the wizard tried to enchant with his wand,
+                            But Trump's wit and charisma were more than just fond.
+                        </p>
+
+                    </article>
+
+                </div>
+                
+            </div>
+
+            <div class="about-btn text-black  relative w-full flex flex-col items-center  xl:top-[-5rem]">
+                <div class="flex w-full justify-center">
+
+                    <button class=" duration-500 hover:scale-[1.2] ease-in-out   relative w-[150px] h-[60px] md:w-[255.75px] md:h-[85.5px] lg:w-[299.5px] lg:h-[115px]">
+                        <div class="bg absolute h-full w-full left-0 top-0 ">
+                            <img src="./assets/images/btn-blue.png" alt="" class="w-full h-full object-contain"> 
+                        </div>
+                        <span class="absolute tracking-[4px]  rotate-[-5deg] text-[1rem] md:text-[1.5rem] lg:text-[2rem] left-[1.56rem] top-[.5rem] md:left-[3.3rem] md:top-[10px] lg:left-[3rem] lg:top-[15px]">No pvt</span>
+                        <span class="absolute tracking-[4px] bottom-[1rem] right-[1.2rem] md:bottom-[1.3rem] md:right-[4rem] lg:bottom-[1.9rem] rotate-[13deg] text-[1rem] md:text-[1.5rem] lg:text-[2rem]">sale</span>
+                    </button>
+
+                    <button class=" duration-500 hover:scale-[1.2] ease-in-out    relative w-[130px] h-[74px] md:w-[171.24px] md:h-[101.25px] lg:w-[228.32px] lg:h-[135px]">
+                        <div class="bg absolute h-full w-full left-0 top-0 ">
+                            <img src="./assets/images/about_btn2.svg" alt="" class="w-full h-full object-contain"> 
+                        </div>
+                        <span class="text-[1.5rem] md:text-[2rem] lg:text-[2.35rem] rotate-[4deg] tracking-[2px] absolute left-[2.3rem] top-[.5rem] md:left-[3rem] md:top-[.8rem] lg:top-[1rem] lg:left-[4rem]">NO</span>
+                        <span class="text-[1.5rem] md:text-[2rem] lg:text-[2.35rem] rotate-[16deg] tracking-[2px] absolute right-[1.5rem] bottom-[1rem] md:right-[2rem] md:bottom-[1rem] lg:right-[3rem] lg:bottom-[1.5rem]">TAX</span>
+                    </button>
+
+                </div> 
+            </div>
+
+        </section>
+
+        <!-- how to -->
+        <section  id="how-to" class="how_to  relative min-w-full h-[902px] max-w-full md:h-[1060px] xl:h-[1998px]  mx-auto  w-full flex flex-col items-center">
+
+            <header class="flex text-white w-full flex-wrap md:flex-nowrap  mt-10 justify-center mx-auto relative md:absolute left-0 items-center gap-x-[1.4rem] gap-y-[0px] md:gap-[2rem] max-w-full md:w-auto xl:gap-[3.5475rem] text-[4rem] md:text-[7.92125rem] xl:text-[13.625rem] md:rotate-180">
+                <h2>HOW</h2>
+                <span class="bg-black pb-[3rem] md:pt-[1rem] text-white h-[40px] w-[40px] md:w-[89.11px] md:h-[89.11px] xl:h-[187.83px] xl:w-[187.83px] text-[2rem] md:text-[3.960625rem] xl:text-[6.83rem] text-center xl:pr-4 xl:pb-4">TO</span>
+                <h2>GET</h2>
+                <H2 class="flex leading-[.5] md:leading-normal uppercase">
+                    <span class="text-black">$</span><span class="text-[#4BB1DF]">t</span><span class="text-[#FFB400]">r</span><span class="text-[#9068D4]">u</span><span class="text-[#812230]">m</span><span class="text-[#9ED450]">p</span> 
+                </H2>
+            </header>
+
+            <div class="content mt-[100px] xl:mt-[2rem] left-[50%] translate-x-[-50%]   xl:max-w-[1500px]   relative md:absolute  md:h-full w-full flex items-start justify-end">
+                
+                <div class="get_container w-full h-auto  md:absolute xl:relative  top-0 md:right-0 xl:left-0 md:w-[60%] md:min-w-[600px] md:h-[800px] xl:h-auto  xl:w-[80%] flex flex-col items-center md:items-start xl:items-center max-w-[100%] ">
+
+                    <div class="get absolute flex items-center justify-end   w-[350px] h-[107.16px] md:w-[479.69px] md:h-[143.81px] md:left-[4rem] xl:left-auto xl:w-[810px] z-[5] xl:h-[248px]">
+               
+                        <span class="bg-[#66CFFF] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] h-[95%] w-[98.5%] absolute"></span>
+                        <p class="text-[#141414] pl-[3rem] md:pl-[2rem] relative md:text-[1.625rem] xl:text-[2.75rem] w-[695px] max-w-[95%] leading-[1]">Create a wallet with phantom wallet or trade using a telegram trading bot 
+                        </p>
+                    </div>
+
+                    <div class="get absolute top-[90px] md:top-[115px] xl:top-[200px] z-[60] flex items-center justify-start pl-[2rem] w-[370px] h-[77px] md:w-[550.29px] md:h-[127.57px] xl:w-[949px] xl:h-[220px]">
+                        <span class="bg-[#66CFFF] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] h-[95%] w-[98.5%] absolute"></span>
+                        <p class="text-[#C11B1B] relative md:text-[1.625rem] xl:text-[2.75rem] w-[769px] max-w-[95%] leading-[1]">
+                            Purchase $SOL on any crypto exchange and transfer to your wallet </p>
+                    </div>
+
+                    <div class="get absolute z-[3] top-[150px] md:top-[200px] md:left-[2rem] xl:left-auto xl:top-[389px] xl:right-[7.8rem] flex items-center justify-center pl-[2rem] w-[328px] h-[101px] md:w-[497.52px] md:h-[165.84px] xl:w-[858px] xl:h-[286px] ">
+                        <span class="bg-[#66CFFF] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] h-[95%] w-[98.5%] absolute"></span>
+                        <p class="text-[#141414] relative md:text-[1.625rem] xl:text-[2.75rem] w-[674px] max-w-[95%] leading-[1]">Buy the election-circus token via phantom wallet or tg bot </p>
+                    </div>
+
+                    <div class="get absolute z-[30] top-[230px] md:top-[330px] md:left-[-1rem] xl:top-[589px] xl:left-auto flex items-center justify-center pl-[2rem] w-[344.3px] h-[160.72px] md:w-[567.68px] md:h-[265px] xl:w-[979px] xl:h-[457px]  text-[#C11B1B]">
+                        <span class="bg-[#66CFFF] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] h-[95%] w-[98.5%] absolute"></span>
+
+                        <p class="w-[85%] rotate-[-3deg] xl:rotate-[-5deg] absolute top-[1.5rem] left-[1.3rem] md:left-[3rem] md:top-[2rem]  xl:left-[6rem] xl:top-[4rem] md:w-[79%] xl:w-[75%] tracking-[0px] xl:tracking-[-1px] leading-[1] xl:leading-[1.2] pl-3 md:text-[1.625rem] xl:text-[2.75rem]">
+                            Select 
+                            <span class="trump_span py-[.1rem] xl:py-[.5rem] mr-[.3rem] xl:mr-[.5] bg-[#D44343] text-white relative left-0 uppercase px-[.5rem] xl:px-[1rem] text-[16px] xl:text-[35px] ">
+                                <span class="text-[#4BB1DF]">e</span><span class="text-[#FFB400]">l</span><span class="text-[#9068D4]">e</span><span class="text-[#812230]">c</span><span class="text-[#9ED450]">t</span><span class="text-[#9ED450]">i</span><span class="text-[#fff]">o</span><span class="text-[#fff]">n</span>
+                                <span class="text-[#812230] ml-[.5rem] xl:ml-[1rem]">t</span><span class="text-[#4BB1DF]">r</span><span class="text-[#9068D4]">u</span><span class="text-[#FFB400]">m</span><span class="text-[#9ED450]">p</span>  
+                            </span>                             ($TRUMP) as the desired token and enter the amount you'd like to buy. The official token address to import is:
+                        </p>
+
+                        <button class="absolute coming cursor-auto flex items-center justify-center  xl:px-[2.5rem] w-[191.47px] h-[32.71px] md:w-[299.21px] md:h-[53.93px] xl:w-[516px] xl:h-[93px]  bottom-[2rem] right-[2rem]   md:right-[4rem] md:bottom-[3rem] xl:bottom-[5rem] xl:gap-[4rem] pt-[.5rem]">
+                            <div class="bg absolute left-0 top-0 select-none ">
+                                <img src="./assets/images/copy_address_how.svg" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <span class=" text-white relative z-[5] text-[13px] md:text-[23px] xl:text-[36px] tracking-[3px]">0x000...COMINGSOON</span>
+                            <div class="icon z-[5] relative cursor-pointer">
+                                <img src="./assets/images/solar_copy-linear.svg" alt="" class="w-[14px] md:w-[17.4px] object-contain xl:w-[40px]">
+                            </div>
+                        </button>
+
+                    </div>
+
+                    <div class="get absolute z-[40] overflow-hidden top-[370px] right-auto md:top-[560px] md:left-[.4rem] xl:top-[979px] xl:left-auto flex items-center justify-center pl-[2rem] w-[333.75px] h-[115.7px] md:w-[550.29px] md:h-[190.77px] xl:w-[949px] xl:h-[329px] xl:right-[6.3rem]"> 
+                        <span class="bg-[#66CFFF] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] h-[95%] w-[98.5%] absolute"></span>
+                        <p class="text-[#141414] top-[1.8rem]  left-[1rem] md:left-[3rem] rotate-[5deg] absolute md:text-[1.625rem] md:top-[2rem] xl:top-[8rem] xl:text-[2.75rem] w-[70%] md:w-[674px] max-w-[95%] leading-[1]">Buy the election-circus token via phantom wallet or tg bot </p>
+                    </div>
+
+                    <!-- eagle image -->
+                    <div class="image absolute top-[-1rem] left-[50%] translate-x-[-50%] md:top-0 xl:top-[-60px] xl:left-[40%] w-[400px] md:w-[550px] xl:w-[1000px] h-[100px] z-[50]">
+                        <img src="./assets/images/eagle.png" class="parachuting w-[145.66px] md:w-[285.65px] xl:w-[400px] object-contain absolute h-auto z-[50] md:top-[-7rem] top-[-4.4rem] left-[-2rem] md:left-[-3rem] xl:bottom-[20%]" alt="catsa how to ">
+                    </div>
+
+                  
+
+                </div>
+
+            </div>
+
+              <!-- stick image -->
+              <div class="image absolute z-[1] right-[-20px] min-[1700px]:right-[-50px] bottom-[22vw] min-[1900px]:bottom-[100px] h-auto w-auto">
+                <img src="./assets/images/stick.png" alt="" class="object-contain h-auto   w-[100px] xl:w-[352px] min-[1900px]:w-[30vw] max-w-[1500px] animated-character">
+            </div>
+
+            <!-- road bike -->
+            <div class="images-cats absolute bottom-0 w-full h-[10vh] left-[50%] translate-x-[-50%]">
+                <img src="./assets/images/biden_roadBike.png" alt="catsa 2" class="rellax bike w-[145px] duration-300 md:w-[211.07px] xl:w-[364px] absolute left-0 bottom-[30px] xl:bottom-[50px] xl:top-auto z-[9]" 
+                >
+                <img src="./assets/images/road.png" class="absolute left-[50%] translate-x-[-50%] xl:w-full xl:max-h-[150px] 2xl:object-cover bottom-0" alt="road">
+            </div>
+
+            
+
+        </section>
+
+        <!-- trumpnomics -->
+        <section id="trumpnomics" class="trumpnomics  max-w-[1500px] mx-auto relative mt-[6rem] md:mt-[5rem] xl:mt-[10rem] h-[500px] sm:h-[410px] md:h-[903px] lg:h-[950px] xl:h-[1280px] 2xl:h-[1500px]"> 
+
+            <header class="relative w-full h-auto md:h-auto  items-end flex justify-center">
+                <h2 class="trump_title uppercase leading-[1] md:mt-0 text-[50px] md:text-[150px] xl:text-[218.57px] relative z-[2] tracking-[3px] text-white"><span class="text-[#4BB1DF]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="200">t</span><span class="text-[#FFB400]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="300">r</span><span class="text-[#9068D4]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="400">u</span><span class="text-[#812230]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="500">m</span><span class="text-[#9ED450]" data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="600">p</span>
+                </h2>
+                <h2 class="text-white leading-[1] text-[30px] md:text-[35px] xl:text-[100px]" data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="800">NOMICS</h2>
+
+            </header>
+
+            <!-- trumpnomics suply -->
+            <div class="suply mt-[100px] xl:mt-[200px] mx-auto max-w-[2000px] w-full h-auto flex justify-center items-center">
+                <!-- union -->
+                <div class="union w-[330px] md:w-[400px] xl:w-[800px] absolute top-[100px] md:top-[200px] xl:top-[400px]">
+                    <div class="union1  absolute left-[20%] flex justify-center items-center h-auto w-auto">
+                        <img src="./assets/images/Union.svg" alt="" class="object-contain h-auto w-[150px] xl:w-[294.75px]">
+                        <p class=" xl:text-[40px] absolute top-[10px] flex"> 
+                            <span class="writingAnimated"  data-typed-strings="Liquidity Locked"></span>
+                        </p>
+                    </div>
+                    <div class="union2 absolute top-0 xl:top-[-75px] right-[-7%] flex justify-center items-center h-auto w-auto">
+                        <img src="./assets/images/Union2.svg" alt="" class="object-contain h-auto w-[150px] xl:w-[294.75px]">
+                        <p class=" xl:text-[40px] absolute top-[10px] flex"  >
+                            <span class="writingAnimated"  data-typed-strings="CA Renounced" ></span>
+                        </p>
+                    </div>
+                </div>
+                <!-- suply image -->
+                <img src="./assets/images/trumpnomics.png" alt="" class="object-contain w-[390px] md:w-[550px] xl:w-[95%] h-auto relative">
+                <div class="total_suply absolute text-center  w-[50%] top-[230px] md:top-[350px] min-[1300px]:top-[670px] min-[1400px]:top-[710px] text-black ">
+                    <h2 class="leading-[1] text-[25px] md:text-[55px] xl:text-[96px]">10,000,000</h2>
+                    <p class="text-[16px] xl:text-[48px]"> $TRUMP</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- trumpnomics 2 -->
+        <section class="trumpnomics_2 mt-[2rem] xl:mt-[4rem] max-w-[1500px] mx-auto relative w-full xl:h-[952px] items-center ">
+
+            <div class="catsanomics-images relative flex justify-start gap-2 w-full h-[150px] md:h-[301.89px] xl:h-[420px]" data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="10">
+                <span class="bg-[#802130] absolute left-[50%] translate-x-[-50%] xl:translate-x-0 xl:left-[-20px] top-0 h-full w-[390px] md:w-[750px] xl:w-[1050px] z-[0]">
+                    <div class="bg absolute overflow-hidden left-0 top-0 w-[100%] rounded-[20px] h-full z-0 flex justify-center items-center ">
+                        <div class=" absolute w-[200%] h-[200%] flex justify-center items-center">
+                            <img src="./assets/images/beam-r.png" alt="f" class="rotate-image absolute rounded-full w-[200%] h-[200%] object-cover">
+                        </div>
+                    </div>
+    
+                </span>
+
+                <div class="images_container absolute xl:relative left-[50%] top-0 translate-x-[-50%] xl:translate-x-0 xl:left-0 h-full flex justify-center xl:justify-start z-[9] gap-[1rem]">
+                    <img src="./assets/images/Artboard1.png" alt="Artboard" class="max-w-[20vw] w-[80px] md:w-[216px] xl:w-[240px] h-auto  object-contain relative z-[12]"> 
+                    <img src="./assets/images/Artboard2.png" alt="Artboard" class="max-w-[20vw] w-[80px] md:w-[216px] xl:w-[240px] h-auto  object-contain relative z-[12]"> 
+                    <img src="./assets/images/Artboard3.png" alt="Artboard" class="max-w-[20vw] w-[80px] md:w-[216px] xl:w-[240px] h-auto  object-contain relative z-[12]"> 
+                    <img src="./assets/images/Artboard4.png" alt="Artboard" class="max-w-[20vw] w-[80px] md:w-[216px] xl:w-[240px] h-auto  object-contain relative z-[12]">   
+                </div>
+
+            </div>
+
+            <div class="about-trumpnomics w-full xl:w-auto mt-[1.4rem] md:mt-[3rem] relative ">
+
+                <div class="text flex flex-col items-start w-full  md:w-[50%]  gap-4 md:gap-6">
+                    <div class="about_trumpnomics text-[#141414] leading-[1]  pl-[2rem]  xl:pl-[4rem] text-[20px] xl:text-[50px] min-[1900px]:text-[60px] w-[70%] md:w-[363px] xl:w-[996px] ">
+                        <p class="mb-[1rem] xl:mb-[3rem]" data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200">Haley the sorceress, with her glass ceiling dream,
+                            Was no match for Trump, who'd become the people's theme,</p>
+                        
+                        <p data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"> For he promised the moon and the stars at night,
+                            And the crowd believed, in their blissful delight.</p>
+                        </div>
+
+                    <div class="btns mt-[2rem] w-full justify-center gap-[1rem] flex items-center flex-wrap">
+                        <button class="join-btn text-white duration-[500ms] ease-in-out cursor-pointer z-[89] relative w-[150.5px] h-[47px] md:w-[170px] md:h-[52px] xl:w-[309px] xl:h-[90px] tracking-[2px] flex items-center justify-center text-[20px] xl:text-[40px] xl:tracking-[4px]" data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="400">
+                            <a href="#" target="_blank">
+                                <img src="./assets/images/chart_btn.svg" alt="" class="absolute left-0 top-0 w-full h-full object-contain">
+                                <span class="relative">GET$TRUMP</span>
+                            </a>
+                        </button>
+                        <button class="join-btn text-black duration-[500ms] ease-in-out cursor-pointer z-[89] relative w-[150.5px] h-[47px] md:w-[170px] md:h-[52px] xl:w-[309px] xl:h-[130px] tracking-[2px] flex items-center justify-center text-[16px] xl:text-[35px] xl:tracking-[4px]" data-aos="fade-right"
+                        data-aos-duration="1000"
+                        data-aos-delay="200">
+                            <a href="#" target="_blank">
+                                <img src="./assets/images/but_on_btn.svg" alt="" class="absolute left-0 top-0 w-full h-full object-contain">
+                                <span class="relative">CHART $TRUMP</span>
+                            </a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="image z-[20] h-[200px] md:h-[400px] top-0 w-full absolute  ">
+                    <img src="./assets/images/trumnomics2.png" alt="" class="animated-character object-contain absolute w-[225px] md:w-[532px] xl:w-[687.66px] rotate-[13deg] right-[-8%] xl:right-[-1vw] md:right-[-10%] bottom-[25%] md:bottom-[30%] xl:bottom-0">
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- footer -->
+        <footer id="contact" class="relative h-[600px] md:h-[900px] xl:h-[1625px] flex flex-col items-center mt-[3rem] xl:mt-[5rem] ">
+
+            <div class="title relative  max-w-[90%] w-[348px] md:w-[570px] xl:w-[848px] h-auto xl:relative">
+                <h2 class="text-center text-white tracking-[2px] text-[60px] md:text-[130px] xl:text-[200px]">
+                    <span class="text-[#000000]" data-aos="zoom-in" 
+                    data-aos-duration="1000"
+                    data-aos-delay="200">c</span><span class="text-[#FFB400]" data-aos="zoom-in" 
+                    data-aos-duration="1000"
+                    data-aos-delay="300">o</span><span class="text-[#dfdfdf]" data-aos="zoom-in" 
+                    data-aos-duration="1000"
+                    data-aos-delay="400">n</span><span class="text-[#9ED450]" data-aos="zoom-in" data-aos-duration="1000"
+                    data-aos-delay="500">t</span><span class="text-[#dfdfdf]" data-aos="zoom-in" 
+                    data-aos-duration="1000"
+                    data-aos-delay="600">a</span><span class="text-[#812230]" data-aos="zoom-in" 
+                    data-aos-duration="1000"
+                    data-aos-delay="700">c</span><span class="text-[#000000]" data-aos="zoom-in" 
+                    data-aos-duration="1000"
+                    data-aos-delay="800">t</span> 
+                    
+                    <span class="text-[#e6e4e4]" data-aos="zoom-in" 
+                    data-aos-duration="1000"
+                    data-aos-delay="900">u</span><span class="text-[#e6e4e4]" data-aos="zoom-in" 
+                    data-aos-duration="1000"
+                    data-aos-delay="1000">s</span>
+                </h2> 
+            </div>
+
+            <!-- images -->
+            <div class="w-full relative h-auto flex justify-between mx-auto max-w-[1400px] px-[200px]">
+                <img src="./assets/images/footer_image1.png" alt="" class="h-auto absolute left-[50px] md:left-auto md:relative object-contain w-[140px] xl:w-[240px]" data-aos="fade-right" 
+                data-aos-duration="1000"
+                data-aos-delay="200">
+                <img src="./assets/images/footer_image2.png" alt="" class="absolute top-[50px] md:top-auto right-0 md:right-auto md:relative h-auto w-[200px] xl:w-[581px]" data-aos="fade-left" 
+                data-aos-duration="1000"
+                data-aos-delay="200">
+            </div>
+
+            <!-- contact form -->
+            <div class="contact absolute bottom-[19%] rounded-[10px] md:rounded-[20px] max-w-[90%] w-[398px] h-[119.34px] md:w-[696px] md:h-[238.68px] xl:w-[1146px] xl:h-[393px] bg-[#141414] flex items-center justify-center flex-col">
+                <!-- background -->
+                <span class="w-[98%] rounded-[10px] md:rounded-[20px] absolute h-[94%] bg-[#9068D4] left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]"></span> 
+
+                <!-- support -->
+                <div class="support cursor-pointer absolute top-[-25px] xl:top-[-50px] h-[40px] w-[275px] xl:h-[105px] xl:w-[573.9px] flex justify-center items-center" data-aos="zoom-in" 
+                data-aos-duration="1000"
+                data-aos-delay="200">
+                    <img src="./assets/images/support_bg.svg" alt="" class="w-full h-full object-contain">
+                    <p class="text-white xl:pt-[1rem] rotate-[2deg] xl:top-[0px] absolute tracking-[3px] text-[15px] xl:text-[45px]">support@electioncirucs.fun</p>
+                </div>
+
+                <!-- about in footer -->
+                <p class="about_inFooter text-center text-[#FFB400] w-[90%] text-[16px] md:text-[25px] xl:text-[50px] relative">And so, in the election circus, Trump took the stage,
+                    A hero to some, a villain to others, in the end,
+                    The clown named Trump had the last laugh, my friend.</p>
+
+                <!-- social media -->
+                <div class="sosmed absolute left-[50%] translate-x-[-50%]  bottom-[-60px] xl:bottom-[-80px] h-[100px] w-[85%] md:w-[90%] flex items-center justify-center gap-10 " >
+
+                    <a class="sosmed absolute left-0 md:relative duration-300 hover:scale-[1.2] ease-in-out w-[68.92px] h-[53.94px] md:w-[171.24px] md:h-[101.25px] xl:w-[188.32px] xl:h-[125px] flex justify-center items-center" target="_blank" href="https://t.me/Election_Circus
+                    " >
+                       <div class="w-full h-full flex justify-center items-center" data-aos="zoom-in" 
+                       data-aos-duration="1000"
+                       data-aos-delay="200">
+                        <img src="./assets/images/tele-footer.png" alt="telegram" class="absolute left-0 top-0 w-full h-full">
+                        <img src="./assets/images/Telegram.png" alt="telegram" class="relative w-[19.3px] md:w-[54px] xl:w-[42px] h-auto">
+                       </div>
+                    </a>
+
+                    <a class="sosmed left-[27%] md:left-0 absolute md:relative duration-300 hover:scale-[1.2] ease-in-out w-[117.38px] h-[59.57px] md:w-[179.45px] md:h-[128.21px] xl:h-[130.95px] xl:w-[209.27px] flex justify-center items-center pl-2 pb-3 xl:pb-[1rem] xl:pl-[1rem]" target="_blank" href="https://x.com/ElectionCirc" >
+                        <div class="w-full h-full flex justify-center items-center" data-aos="zoom-in" 
+                        data-aos-duration="1000"
+                        data-aos-delay="200">
+                        <img src="./assets/images/twitter-footer.png" alt="telegram" class="absolute left-0 top-0 w-full h-full">
+                        <img src="./assets/images/twitter.png" alt="twitter/x" class="relative ml-[.5rem] mb-[.5rem] xl:mb-[1rem] xl:ml-[1rem] w-[18.49px] md:w-[46.97px] xl:w-[40px] h-auto">
+                        </div>
+                    </a>
+
+                    <a class="sosmed absolute right-0 md:relative duration-300 hover:scale-[1.2] ease-in-out w-[82.5px] h-[51.86px] md:w-[188.89px] md:h-[113.99px] xl:w-[201.86px] xl:h-[131.99px] flex justify-center items-center  xl:pb-[1rem] " target="_blank" href="https://t.me/Election_Circus">
+                        <div class="w-full h-full flex justify-center items-center" data-aos="zoom-in" 
+                        data-aos-duration="1000"
+                        data-aos-delay="200">
+                        <img src="./assets/images/sonar.png" alt="telegram" class="absolute left-0 top-0 w-full h-full">
+                        <img src="./assets/images/sdq.png" alt="telegram" class="relative mb-[.5rem] xl:mb-[1rem] w-[25.81px] md:w-[66px] xl:w-[58px] h-auto">
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="by absolute bottom-[20px] flex items-center">
+               <div class="text-[30px] xl:text-[96px] flex items-center gap-[1rem]">
+                <img src="./assets/images/navbar_logo.png" alt="" class="object-contain h-auto w-[50px]   xl:w-[130px]">
+                <h2>
+                    <span class="text-[#000000]">E</span><span class="text-[#FFB400]">l</span><span class="text-[#dfdfdf]">e</span><span class="text-[#9ED450]">c</span><span class="text-[#dfdfdf]">t</span><span class="text-[#812230]">i</span><span class="text-[#e6e4e4]">o</span><span class="text-[#e6e4e4]">n</span>
+                </h2>
+
+                <h2>
+                    <span class="text-[#812230]">C</span><span class="text-[#9ED450]">i</span><span class="text-[#4BB1DF]">r</span><span class="text-[#9068D4]">c</span><span class="text-[#FFB400]">u</span><span class="text-[#070707]">s</span>
+                </h2> 
+                 
+                <span class="text-[#7D8C6B]">|</span>
+
+                <h2>
+                    <span class="text-[#ffffff]">2</span><span class="text-[#000000]">0</span><span class="text-[#9ED450]">2</span><span class="text-[#4BB1DF]">4</span>  
+                </h2>
+
+               </div>
+
+            </div>
+
+        </footer>
+
+  
+         </div>
+     
+        <!-- scroll magic -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        
+        <!-- aos js library animation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+         <script src="https://unpkg.com/scrollreveal"></script> 
+        <script src="./assets/js/index.js"></script> 
+</body>
+</html>
